@@ -1,4 +1,5 @@
 # for cleaning the data 
+import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
@@ -17,5 +18,5 @@ clf.fit(X_train, y_train)
 
 # Evaluate the classifier on the test data
 y_pred = clf.predict(X_test)
-print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Accuracy:", accuracy_score(y_test,y_pred))
 
